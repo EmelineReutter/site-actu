@@ -36,3 +36,23 @@ button {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 }
+
+.container {
+    width: 100vw;
+    min-height: 200px;
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texte-rouge {
+    color: red;
+}
