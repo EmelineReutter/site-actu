@@ -1,0 +1,38 @@
+button {
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+.containerGauche {
+    font-weight: normal;
+    font-size: 22px;
+    padding: 10px;
+}
+.containerDroite {
+    padding-right: 110px;
+    font-weight: normal;
+    font-size: 22px;
+    color: red;
+}
+.arrow-right.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 2px;
+    width: 16px;
+    height: 1px;
+    background-color: currentColor;
+}
+.arrow-right.icon:before {
+    content: '';
+    position: absolute;
+    right: 1px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
