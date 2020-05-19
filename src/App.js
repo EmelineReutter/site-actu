@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Accueil from './pages/accueil'
 import AntDesign from './pages/antdesign'
 import './App.css'
+import 'antd/dist/antd.css'
 
 function App() {
   return (

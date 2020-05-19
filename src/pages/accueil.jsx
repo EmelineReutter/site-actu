@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Grille from '../molecules/grille/grille'
+
 function Accueil () {
   return (<section>
     <h1>Acceuil</h1>
@@ -8,6 +10,8 @@ function Accueil () {
 
     <div id="emeline-work">
       Remplace ce contenu par tes composants
+
+      <Grille />
     </div>
   </section>)
 }

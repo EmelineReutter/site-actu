@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'antd'
 
 function AntDesign () {
   return (<section>
@@ -8,6 +9,10 @@ function AntDesign () {
 
     <div>
       Remplace ce contenu par les composants d'ant design
+
+      <br/>
+      <Button type="primary">Primary</Button>
+
     </div>
   </section>)
 }
