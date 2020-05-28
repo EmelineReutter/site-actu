@@ -22,7 +22,7 @@ function ComposantDexemple () {
 }
 ```
 exemple : 
-
+```jsx
 import { Button } from 'antd'; 
 
 ReactDOM.render(
@@ -31,6 +31,7 @@ ReactDOM.render(
   </div>,
   mountNode,
 );
+```
 
 Etapes pour le faire :
 1. Se rendre sur le site https://ant.design et dans la partie "Components"(composants)
@@ -42,7 +43,7 @@ Etapes pour le faire :
 ### Exemple 2 : utiliser un composant React que j'ai créé moi-même
 
 TODO Emeline : compléter le code ci-dessous, en réutilisant le code écrit par Antoine pour soit Texte, soit Grille soit Carré.
-
+```jsx
 //code de Texte
 import React from 'react'
 
@@ -51,6 +52,7 @@ export default function Texte({ couleur, graisse, children }) {
         <span>Je suis un texte, je devrais m'afficher en {couleur}, mais flemme d'écrire le css, et je devrais avoir comme graisse {graisse}. Et je dois afficher le texte : {children}</span>
     )
 }
+
 
 ```jsx
 function ComposantDexemple () {
