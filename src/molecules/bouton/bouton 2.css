@@ -1,9 +1,6 @@
 .icon {
     overflow: visible;
 }
-.anticon svg {
-    color: red;
-}
 
 .arrow-right.icon {
     color: rgba(0,0,0,0.2);
@@ -44,9 +41,10 @@
 .button {
     display: flex;
     align-items: center;
-    flex-flow: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    width: 30%;
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
