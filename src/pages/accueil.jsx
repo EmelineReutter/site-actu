@@ -41,8 +41,6 @@ function Accueil() {
       <Bouton IconedeGauche={<ShoppingOutlined />}>
         Voyages
       </Bouton>
-
-
       <Grille />
       <Texte>
         Hye je suis un paragraphe !

@@ -3,6 +3,8 @@
 }
 .anticon svg {
     color: red;
+    width: 30px;
+    height: 30px;
 }
 
 .arrow-right.icon {
@@ -46,11 +48,12 @@
     align-items: center;
     flex-flow: row-reverse;
 
-    width: 30%;
+    width: 25%;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 30px;
+    margin-bottom: 16px;
 
     background: #FFFFFF;
     border: 1px solid rgba(150, 147, 147, 0.24);
@@ -73,6 +76,7 @@
 
     letter-spacing: 0.01em;
     text-align: left;
+    padding-left: 20px;
     font-family: 'Roboto', sans-serif;
     color: #121212;
 }
