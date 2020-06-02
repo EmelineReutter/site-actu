@@ -10,14 +10,13 @@ Ce fichier contient des mémos sur l'utilisation et la création de composants R
 
 exemple : 
 ```jsx
-import { Button } from 'antd'; 
 
-ReactDOM.render(
-  <div>
-    <Button type="primary">Primary</Button>
-  </div>,
-  mountNode,
-);
+import { Button } from 'antd';
+
+function ComposantDexemple () {
+  return <div className='exemple-ant'><Button type="primary">Primary Button</Button></div>
+  }
+
 ```
 Étapes pour le faire :
 1. Se rendre sur le site https://ant.design et dans la partie "Components"(composants).
@@ -26,8 +25,6 @@ ReactDOM.render(
 4. Je fais un copier coller du code du composant que je veux importer et je l'importe dans mon fichier jsx.
 
 ### Exemple 2 : utiliser un composant React que j'ai créé moi-même
-
-TODO Emeline : compléter le code ci-dessous, en réutilisant le code écrit par Antoine pour soit Texte, soit Grille soit Carré.
 
 ```jsx
 import React from 'react'
@@ -44,37 +41,34 @@ function ComposantDexemple () {
 ```
 Étapes pour le faire :
 
-1.  J'importe mon composant que je veux utiliser.
-2. "Appeler" son composant dans son code (toujours avec une majuscule et dans une balise).
+1. J'importe le composant que je veux utiliser.
+2. "Appeler" son composant dans son code (toujours avec une majuscule et dans une balise). Par exemple, pour utiliser un composant grille il faut écrire ça `<Grille />` et pas `<grille />`. C'est imposé par React.
 
 ## 1 - Créer un nouveau composant React (atome ou molécule, c'est pareil)
-
-TODO : Emeline -> expliquer comment créer un nouveau composant React, avec un exemple de code.
 
 ### Exemple 1 : créer un composant Texte non-paramétrable
 
 ```jsx
 import React from 'react'
-import './carre.css'
 
-function Carre() {
-  return <div className="carre"></div>
+export default function Texte() {
+  return (
+  <div className='texte'> Je suis un texte non-paramétrable </div>
+  )
 }
 
-export default Carre
+export default Texte
 ```
 Étapes pour le faire :
 
 1. Toujours importer react.
-2. Importer son fichier CSS (si il existe).
+2. Importer son fichier CSS si il existe (Voir ligne 108).
 3. Déclarer sa fonction (avec un nom en cohérence avec ce qu'elle fait ou ce qu'elle représente).
 4. Ne pas mettre de paramètres entre les parenthèses.
 
 ### Exemple 2 : créer un composant Texte paramétrable
 
 Le composant texte en question a trois paramètres : couleur, graisse, children.
-
-TODO Emeline : compléter le code ci-dessous, en réutilisant le code écrit par Antoine pour soit Texte, soit Grille soit Carré.
 
 ```jsx
   import React from 'react'
@@ -87,24 +81,22 @@ export default function Texte({ couleur, graisse, children }) {
 ```
 Étapes pour le faire :
 
-1. Première étape toujours importer react avec la commande : import React from 'react'.
+1. Première étape toujours importer react avec la ligne de code : import React from 'react'.
 2. Donner un nom cohérent à la nouvelle fonction (un nom en rapport avec ce qu'elle fait ou ce qu'elle représente)
 3. Donner des paramètres à cette fonction, exemple pour texte on à ajouté couleur, graisse et children.
 4. Toujours mettre en paramètre {children} qui permet de prendre en compte ce qui sera écrit dans la fonction.
 
 ### Exemple 3 : créer un composant Bouton
 
-Le composant Bouton en question a ... paramètres : (TODO Emeline)
-
-TODO Emeline : compléter le code ci-dessous, en réutilisant le code écrit par Antoine pour soit Texte, soit Grille soit Carré.
+Le composant Bouton en question a deux paramètres : ({children, IconedeGauche})
 
 ```jsx
 import React from 'react'
 import './bouton.css'
 
-function Bouton({ children, todo_Emeline }) {
+function Bouton({ children, IconedeGauche }) {
     return <button class="button">
-        <div class="button-text button-item">{children, todo_Emeline}</div>
+        <div class="button-text button-item">{children, IconedeGauche}</div>
         <div class="button-icon button-last-item"><div class="arrow-right icon"></div></div>
     </button>
 }
@@ -113,9 +105,9 @@ export default Bouton
 Étapes pour le faire :
 
 1. J'importe React.
-2. J'importe mon fichier CSS (si il y en a un).
+2. J'importe mon fichier CSS si il y en a un (exemple ligne 95).
 3. Je déclare ma fonction en lui donnant un nom cohérent avec ce qu'elle fait (ici il s'agit de "Bouton").
-4. Je met des paramètres (ici il s'agira de {children} et {todo_Emeline}).
+4. Je met des paramètres (ici il s'agira de {children} et {IconedeGauche}).
 5. Je "return" ce que ma fonction doit retourner (ici il s'agit de plusieurs <div>).
 6. Dans ma fonction j'écris mes éléments HTML (<button>, <div> ...)
 7. J'exporte ma fonction par défaut. ("export default NomdeLaFonction").
