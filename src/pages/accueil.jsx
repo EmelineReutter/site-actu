@@ -14,36 +14,35 @@ function Accueil() {
     <a href="/ant-design">Aller à la page ant design</a>
     <div id="emeline-work">
       Remplace ce contenu par tes composants
-      <Bouton IconedeGauche={<StarOutlined />}>
-        Spectacles
+      <div className='col-4'>
+        <Bouton iconeDeGauche={<StarOutlined />}>
+          Spectacles
       </Bouton>
-      <Bouton IconedeGauche={<TagsOutlined />}>
-        Expositions
+        <Bouton iconeDeGauche={<TagsOutlined />}>
+          Expositions
       </Bouton>
-      <Bouton IconedeGauche={<SoundOutlined />}>
-        Concerts
+        <Bouton iconeDeGauche={<SoundOutlined />}>
+          Concerts
       </Bouton>
-      <Bouton IconedeGauche={<TeamOutlined />}>
-        Enfants
+        <Bouton iconeDeGauche={<TeamOutlined />}>
+          Enfants
       </Bouton>
-      <Bouton IconedeGauche={<FilterOutlined />}>
-        Clubbing
+        <Bouton iconeDeGauche={<FilterOutlined />}>
+          Clubbing
       </Bouton>
-      <Bouton IconedeGauche={<ShopOutlined />}>
-        Restaurants
+        <Bouton iconeDeGauche={<ShopOutlined />}>
+          Restaurants
       </Bouton>
-      <Bouton IconedeGauche={<CoffeeOutlined />}>
-        Bars
+        <Bouton iconeDeGauche={<CoffeeOutlined />}>
+          Bars
       </Bouton>
-      <Bouton IconedeGauche={<ShoppingCartOutlined />}>
-        Boutiques
+        <Bouton iconeDeGauche={<ShoppingCartOutlined />}>
+          Boutiques
       </Bouton>
-      <Bouton IconedeGauche={<ShoppingOutlined />}>
-        Voyages
+        <Bouton iconeDeGauche={<ShoppingOutlined />}>
+          Voyages
       </Bouton>
-      <Bouton>
-        <Texte> Sur </Texte>
-      </Bouton>
+      </div>
       <Grille />
       <Texte>
         Hye je suis un paragraphe !
