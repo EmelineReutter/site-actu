@@ -16,7 +16,7 @@ import { Button } from 'antd';
 function ComposantDexemple () {
   return <div className='exemple-ant'><Button type="primary">Primary Button</Button></div>
   }
-
+  
 ```
 Étapes pour le faire :
 1. Se rendre sur le site https://ant.design et dans la partie "Components"(composants).
@@ -62,7 +62,7 @@ export default Texte
 Étapes pour le faire :
 
 1. Toujours importer react.
-2. Importer son fichier CSS si il existe (Voir ligne 108).
+2. Importer son fichier CSS si il existe (exemple si j'avais un fichier CSS pour texte j'aurais dû noter au début :  import './text.css').
 3. Déclarer sa fonction (avec un nom en cohérence avec ce qu'elle fait ou ce qu'elle représente).
 4. Ne pas mettre de paramètres entre les parenthèses.
 
@@ -88,16 +88,17 @@ export default function Texte({ couleur, graisse, children }) {
 
 ### Exemple 3 : créer un composant Bouton
 
-Le composant Bouton en question a deux paramètres : ({children, IconedeGauche})
+Le composant Bouton en question a deux paramètres : ({children, iconeDeGauche})
 
 ```jsx
 import React from 'react'
 import './bouton.css'
 
-function Bouton({ children, IconedeGauche }) {
+function Bouton({ children, iconeDeGauche }) {
     return <button class="button">
-        <div class="button-text button-item">{children, IconedeGauche}</div>
-        <div class="button-icon button-last-item"><div class="arrow-right icon"></div></div>
+        <div class="button-icon button-last-item">{iconeDeGauche}</div>
+        <div class="button-text button-item">{children}</div>
+        <div class='container-arrow'><div class="arrow-right icon arrow-right.icon:before"></div></div>
     </button>
 }
 export default Bouton 
@@ -105,9 +106,9 @@ export default Bouton
 Étapes pour le faire :
 
 1. J'importe React.
-2. J'importe mon fichier CSS si il y en a un (exemple ligne 95).
+2. J'importe mon fichier CSS si il y en a un (Voir ci-dessus dans l'exemple pour Bouton).
 3. Je déclare ma fonction en lui donnant un nom cohérent avec ce qu'elle fait (ici il s'agit de "Bouton").
-4. Je met des paramètres (ici il s'agira de {children} et {IconedeGauche}).
+4. Je met des paramètres (ici il s'agira de {children} et {iconeDeGauche}).
 5. Je "return" ce que ma fonction doit retourner (ici il s'agit de plusieurs <div>).
 6. Dans ma fonction j'écris mes éléments HTML (<button>, <div> ...)
 7. J'exporte ma fonction par défaut. ("export default NomdeLaFonction").
