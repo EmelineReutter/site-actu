@@ -1,6 +1,11 @@
 .icon {
     overflow: visible;
 }
+.anticon svg {
+    color: red;
+    width: 30px;
+    height: 30px;
+}
 
 .arrow-right.icon {
     color: rgba(0,0,0,0.2);
@@ -8,6 +13,7 @@
     height: 1px;
     background-color: currentColor;
 }
+
 .arrow-right.icon:before {
     content: '';
     position: absolute;
@@ -38,17 +44,21 @@
     margin-right: 20px;
 }
 
+.button-icon {
+    width: 30px;
+    height: 30px;
+}
+
 .button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
     width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 30px;
+    margin-bottom: 16px;
 
     background: #FFFFFF;
     border: 1px solid rgba(150, 147, 147, 0.24);
@@ -60,17 +70,14 @@
     box-shadow: 0 0 5px rgba(33,33,33,.2);
 }
 
-.text-red {
-    color:#D8232A;;
-}
-
 .button-text {
     font-size: 22px;
-    line-height: 120%;
+    line-height: 30px;
     flex-grow: 2;
 
     letter-spacing: 0.01em;
     text-align: left;
+    padding-left: 20px;
     font-family: 'Roboto', sans-serif;
     color: #121212;
 }
