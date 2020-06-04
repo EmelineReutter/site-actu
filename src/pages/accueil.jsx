@@ -45,7 +45,7 @@ function Accueil() {
       </div>
       <Grille />
       <Texte>
-        Hye je suis un paragraphe !
+        Coucou je suis un paragraphe !
       </Texte>
     </div>
   </section>)
