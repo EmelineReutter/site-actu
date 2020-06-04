@@ -10,7 +10,7 @@ Ce fichier contient des mémos sur l'utilisation et la création de composants R
 
 exemple : 
 ```jsx
-
+import react from 'react';
 import { Button } from 'antd';
 
 function ComposantDexemple () {
