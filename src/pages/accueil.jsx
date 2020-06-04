@@ -3,6 +3,7 @@ import React from 'react'
 import Grille from '../molecules/grille/grille'
 import Bouton from '../molecules/bouton/bouton'
 import Texte from '../atoms/texte/texte'
+import Image from '../atoms/image/image'
 
 import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined, ShopOutlined, CoffeeOutlined, ShoppingCartOutlined, ShoppingOutlined } from '@ant-design/icons';
 
@@ -43,6 +44,7 @@ function Accueil() {
           Voyages
       </Bouton>
       </div>
+      <Image />
       <Grille />
       <Texte>
         Coucou je suis un paragraphe !

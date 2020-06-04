@@ -1,0 +1,9 @@
+.image {
+    width: 200px;
+    height: 268px;
+
+    background-image: url(affiches-png/le-char-et-lolivier-affiche.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
