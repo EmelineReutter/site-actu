@@ -4,15 +4,17 @@ import Grille from '../molecules/grille/grille'
 import Bouton from '../molecules/bouton/bouton'
 import Texte from '../atoms/texte/texte'
 import Image from '../atoms/image/image'
+import BlocImage from '../molecules/blocImage/blocImage'
 
 import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined, ShopOutlined, CoffeeOutlined, ShoppingCartOutlined, ShoppingOutlined } from '@ant-design/icons';
-
 
 function Accueil() {
   return (<section>
     <h1>Acceuil</h1>
     <p>Emeline, c'est ici que tu dois tester les composants que tu créé.</p>
+
     <a href="/ant-design">Aller à la page ant design</a>
+
     <div id="emeline-work">
       Remplace ce contenu par tes composants
       <div className='col-4'>
@@ -44,12 +46,39 @@ function Accueil() {
           Voyages
       </Bouton>
       </div>
+      <h1>Test atoms Texte, Image + Test Molécule BlocImage</h1>
+      <BlocImage>
+        Film documentaire
+        Le char et l'olivier, une autre histoire de la Palestine
+        Roland Nurier
+      </BlocImage>
+
       <Image />
-      <Grille />
       <Texte>
-        Coucou je suis un paragraphe !
+        Film documentaire.
+        Le Char et l'olivier,une autre histoire de la Palestine.
+        Roland Nurier.
       </Texte>
+      <Image />
+      <Texte>
+        Film d'animation.
+        J'ai perdu mon corps.
+        Jérémy Clapin.
+      </Texte>
+      <Image />
+      <Texte>
+        Drame sentimental.
+        J'accuse.
+        Roman Polanski.
+      </Texte>
+      <Image />
+      <Texte>
+        Film documentaire.
+        L'âme du vin.
+        Marie Ange Gorbanevsky.
+      </Texte>
+      <Grille />
     </div>
-  </section>)
+  </section >)
 }
 export default Accueil
