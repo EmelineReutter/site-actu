@@ -3,6 +3,6 @@ import './image.css'
 
 export default function Image({ src }) {
     return (
-        <img></img>
+        <img />
     )
 }

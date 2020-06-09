@@ -17,3 +17,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.affiche1 {
+    background-image: url(affiche1.png);
+}
+
+.affiche2 {
+    background-image: url(affiche2.png);
+}
+
+.afffiche3 {
+    background-image: url(affiche3.png);
+}
+
+.affiche4 {
+    background-image: url(affiche4.png);
+}
+
