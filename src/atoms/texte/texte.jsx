@@ -1,19 +1,16 @@
 import React from 'react'
 import './texte.css'
 
-export default function Texte({ children }) {
+export default function Texte({ children, type, titre, auteur }) {
     return (
         <div>
             {children}
-            <span className='type_film'></span>
-            <span className='titre_film'></span>
-            <span className='auteur_film'></span>
+            <span className='type_film'>{type}</span>
+            <span className='titre_film'>{titre}</span>
+            <span className='auteur_film'>{auteur}</span>
         </div>
     )
 }
-
-
-
 
 /*
 export default function Texte({ couleur, graisse, children }) {
@@ -36,3 +33,22 @@ export default function TexteImage({ children, auteur, type, titre }) {
             <span className='auteur_film'>{auteur}</span>
         </div>
     ) */
+
+/*
+Film documentaire
+Le Char et l'olivier,une autre histoire de la Palestine.
+Roland Nurier.
+
+Film d'animation.
+J'ai perdu mon corps.
+Jérémy Clapin.
+
+Drame sentimental.
+J'accuse.
+Roman Polanski.
+
+Film documentaire.
+L'âme du vin.
+Marie Ange Gorbanevsky.
+
+*/

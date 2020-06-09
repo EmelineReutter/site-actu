@@ -1,9 +1,8 @@
 import React from 'react'
 import './image.css'
 
-export default function Image() {
+export default function Image({ src }) {
     return (
-        <div className='image'></div>
+        <img></img>
     )
 }
-

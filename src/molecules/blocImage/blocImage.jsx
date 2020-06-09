@@ -5,13 +5,13 @@ import Image from '../../atoms/image/image'
 
 export default function BlocImage({ children }) {
     return (
-        <div className='Container'>
+        <div className='container_films'>
             {children}
-            <div> <Image></Image></div>
-            <div>
-                <Texte></Texte>
-                <Texte></Texte>
-                <Texte></Texte>
+            <div className='images'><Image></Image></div>
+            <div className='textes'>
+                <Texte>
+                    Putin j'aimerais bien comprendre çe que je fais.
+                </Texte>
             </div>
         </div>
     )

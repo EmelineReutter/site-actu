@@ -1,0 +1,19 @@
+.container_films {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-right: 24px;
+}
+.container_affiche {
+    display: flex;
+    width: 80%;
+}
+
+.images {
+    width: 200px;
+    height: 268px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}

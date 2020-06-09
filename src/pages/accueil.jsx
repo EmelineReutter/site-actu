@@ -2,9 +2,8 @@ import React from 'react'
 
 import Grille from '../molecules/grille/grille'
 import Bouton from '../molecules/bouton/bouton'
-import Texte from '../atoms/texte/texte'
-import Image from '../atoms/image/image'
 import BlocImage from '../molecules/blocImage/blocImage'
+import '../atoms/image/affiches-png'
 
 import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined, ShopOutlined, CoffeeOutlined, ShoppingCartOutlined, ShoppingOutlined } from '@ant-design/icons';
 
@@ -47,36 +46,25 @@ function Accueil() {
       </Bouton>
       </div>
       <h1>Test atoms Texte, Image + Test Molécule BlocImage</h1>
-      <BlocImage>
-        Film documentaire
-        Le char et l'olivier, une autre histoire de la Palestine
-        Roland Nurier
-      </BlocImage>
+      ---------------------------------------------------------------------
+      <h1> Vous sortez ? </h1>
+      <h2> Les sorties cinémas de la semaine </h2>
+      <div className='container_affiche'>
+        <BlocImage>
 
-      <Image />
-      <Texte>
-        Film documentaire.
-        Le Char et l'olivier,une autre histoire de la Palestine.
-        Roland Nurier.
-      </Texte>
-      <Image />
-      <Texte>
-        Film d'animation.
-        J'ai perdu mon corps.
-        Jérémy Clapin.
-      </Texte>
-      <Image />
-      <Texte>
-        Drame sentimental.
-        J'accuse.
-        Roman Polanski.
-      </Texte>
-      <Image />
-      <Texte>
-        Film documentaire.
-        L'âme du vin.
-        Marie Ange Gorbanevsky.
-      </Texte>
+        </BlocImage>
+
+        <BlocImage>
+
+        </BlocImage>
+        <BlocImage>
+
+        </BlocImage>
+        <BlocImage>
+
+        </BlocImage>
+        <img src="src/atoms/image/affiches-png/j_ai-perdu-mon-corps.png" alt="Affiche du film j'ai perdue mon corps"></img>
+      </div>
       <Grille />
     </div>
   </section >)
