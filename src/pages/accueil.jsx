@@ -8,7 +8,7 @@ import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined
 function Accueil() {
   return (
     <section>
-      <h1>Acceuil</h1>
+      <h1>Accueil</h1>
       <p>Emeline, c'est ici que tu dois tester les composants que tu créé.</p>
       <a href="/ant-design">Aller à la page ant design</a>
 

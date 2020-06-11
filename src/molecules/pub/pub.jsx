@@ -1,6 +1,10 @@
-function Pub() {
+import React from ''
+
+import Pub from './pub.css'
+
+export default function Pub() {
     return (
-        <div id="pub-principale">
+        <div className="pub">
             <Pub />
         </div>
     )
