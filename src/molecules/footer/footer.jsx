@@ -1,36 +1,27 @@
-import { Mentions } from "antd";
 import React from 'react'
 import './footer.css'
 
 import Titre from '../../atoms/titre/titre'
 import Bouton from '../bouton/bouton'
-import Texte from '../../Atoms/texte/texte'
+import Texte from '../../atoms/texte/texte'
 
-import LogoFacebook from ''
-import LogoTwitter from ''
-import LogoInstagram from ''
-import LogoYoutube from ''
-import Logo from ''
+import Categorie from '../categorie/categorie'
+import SousCategorie from '../sous-categorie/sousCategorie'
 
-import Categorie from '../../atoms/categorie/categorie'
-import SousCategorie from '../../atoms/sous-categorie/sousCategorie'
-
-import Site from '../../atoms/site/site'
-import MentionsLegales from '../../atoms/mentions-legales/mentionsLegales'
-
-
+import Site from '../site/site'
+import MentionsLegales from '../mentions-legales/mentionsLegales'
 
 export default function Footer() {
     return (
         <div className="footer">
             <div className="titre-footer">
                 <Titre />
-                <div className="navBar-reseaux-sociaux">
-                    <LogoFacebook />
-                    <LogoTwitter />
-                    <LogoInstagram />
-                    <LogoYoutube />
-                    <Logo />
+                <div className="navbar-reseaux-sociaux">
+                    <Bouton titre="Facebook" />
+                    <Bouton titre="Twitter" />
+                    <Bouton titre="Instagram" />
+                    <Bouton titre="Youtube" />
+                    <Bouton titre="RSS" />
                 </div>
             </div>
             <div className="colonne-gauche">
@@ -60,21 +51,21 @@ export default function Footer() {
             </div>
             <div className="colonne-droite">
                 <div className="rubriques-droite">
-                    <Categories titre="Cannes 2019" />
-                    <Categories titre="Enfants" />
-                    <Categories titre="Musiques" />
-                    <Categories titre="Radio & Podcasts" />
-                    <Categories titre="Livre" />
-                    <Categories titre="Débats & Reportages" />
-                    <Categories titre="Services abonnés">
+                    <Categorie titre="Cannes 2019" />
+                    <Categorie titre="Enfants" />
+                    <Categorie titre="Musiques" />
+                    <Categorie titre="Radio & Podcasts" />
+                    <Categorie titre="Livre" />
+                    <Categorie titre="Débats & Reportages" />
+                    <Categorie titre="Services abonnés">
                         <SousCategorie titre="Sorties Réduction" />
                         <SousCategorie titre="Bouquet VOD" />
-                    </Categories>
+                    </Categorie>
 
-                    <Categories titre="Autres services">
+                    <Categorie titre="Autres services">
                         <SousCategorie titre="La boutique Télérama" />
                         <SousCategorie titre="La billeterie" />
-                    </Categories>
+                    </Categorie>
 
                 </div>
                 <div className="nos-applis-mobiles">
@@ -83,22 +74,22 @@ export default function Footer() {
                         titre="Appli TV" />
                     <SousCategorie
                         titre="Télécharger sur google play"
-                        text-decoration="solid"
-                        text-decoration-color="black" />
+                        text_decoration="solid"
+                        text_decoration_color="black" />
                     <SousCategorie
                         titre="Télécharger sur l'App Store"
-                        text-decoration="solid"
-                        text-decoration-color="black" />
+                        text_decoration="solid"
+                        text_decoration_color="black" />
                     <SousCategorie
                         titre="Appli liseuse" />
                     <SousCategorie
                         titre="Télécharger sur google play"
-                        text-decoration="solid"
-                        text-decoration-color="black" />
+                        text_decoration="solid"
+                        text_decoration_color="black" />
                     <SousCategorie
                         titre="Télécharger sur l'App Store"
-                        text-decoration="solid"
-                        text-decoration-color="black" />
+                        text_decoration="solid"
+                        text_decoration_color="black" />
                 </div>
             </div>
             <div className="sites-du-groupe">

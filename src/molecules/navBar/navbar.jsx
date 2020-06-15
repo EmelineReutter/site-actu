@@ -2,13 +2,13 @@ import React from 'react'
 
 import './navbar.css'
 
-import IconeRecherche from '../../atoms/icone-recherche/iconeRecherche'
+import Bouton from '../bouton/bouton'
 import Section from '../../atoms/section/section'
 
 export default function NavBar() {
     return (
         <div className="navbar">
-            <IconeRecherche />
+            <Bouton titre="recherche" />
             <Section
                 titre='Programme TV' />
             <Section

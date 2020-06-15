@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Texte() {
+export default function Site() {
     return (
-        <div className="texte">
+        <div className="Site">
             <p>
-                Texte
+                Site
             </p>
         </div>
     )

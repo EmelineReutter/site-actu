@@ -1,7 +1,7 @@
 import React from 'react'
 import './bouton.css'
 
-function Bouton({ children, iconeDeGauche }) {
+function Bouton({ children, iconeDeGauche, titre, graisse, backgroundColor }) {
     return <button class="button">
         <div class="button-icon button-last-item">{iconeDeGauche}</div>
         <div class="button-text button-item">{children}</div>

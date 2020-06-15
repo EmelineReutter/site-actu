@@ -1,8 +1,9 @@
 import React from 'react'
-import './image.css'
 
-export default function Image({ src }) {
+export default function Image({ src, plateformeStreaming, duree }) {
     return (
-        <img />
+        <div>
+            <p> Je suis une image !</p>
+        </div>
     )
 }
