@@ -18,34 +18,32 @@ export default function VousRestezALaMaison() {
             <div className="titre-vous-restez-a-la-maison">
 
                 <div className="a-regarder-ce-soir">
-                    <Titre />
+                    <Titre graisse="bold" color="black">
+                        Vous restez à la maison ?
+                    </Titre>
                     <Ligne />
-                    <Titre />
+                    <Titre graisse="bold" color="black">
+                        À regarder ce soir
+                    </Titre>
                     <Article
                         typeDeContenu="Documentaire"
                         titreContenu="Rohingya, la mécanique du crime"
                         phraseDaccroche="Reportage exceptionnel à voir en replay" >
-                        <Image
-                            plateformeStreaming="Apple TV"
-                            duree={1.30} />
+                        <Image src="images/image4.jpeg" />
                     </Article>
 
                     <Article
                         typeDeContenu="Vidéo"
                         titreContenu="Femmes de western au cinéma"
                         phraseDaccroche="Chapeau, Cowgirl !">
-                        <Image
-                            plateformeStreaming="Youtube"
-                            duree={1.30} />
+                        <Image src="images/image1.jpeg" />
                     </Article>
 
                     <Article
                         typeDeContenu="Série"
                         titreContenu="Undone - S1"
                         phraseDaccroche="Par le créateur de Bojack Horseman">
-                        <Image
-                            plateformeStreaming="Prime video"
-                            duree={1.30} />
+                        <Image src="images/image2.jpeg" />
                     </Article>
 
                     <Article
@@ -79,7 +77,7 @@ export default function VousRestezALaMaison() {
                                 tempsDeLecture={6} />
                         </div>
                         <div className="les-selections-enfants-de-la-redaction">
-                            <Titre />
+                            <Titre graisse="bold" color="black" > Les sélections enfants de la rédaction </Titre>
                             <Article
                                 typeDeContenu="Écrans & TV .Télévision"
                                 titreContenu="Selection TV enfants (...)"
@@ -90,20 +88,18 @@ export default function VousRestezALaMaison() {
                                 tempsDeLecture={6} />
                         </div>
                         <div className="abonnement-telerama">
-                            <Titre />
+                            <Titre graisse="bold" color="black">
+                                Abonnez vous à Télérama et profitez gratuitement d'une sélection de films.
+                            </Titre>
                             <Article
                                 titreArticle="Douleur et gloire"
                                 phraseDaccroche="L'Espagnol (...)">
-                                <Image
-                                    plateformeStreaming="Canal +"
-                                    duree={1.30} />
+                                <Image src="images/image4.jpeg" />
                             </Article>
                             <Article
                                 titreArticle="Old Joy"
                                 phraseDaccroche="Besoin d'air ? (...)">
-                                <Image
-                                    plateformeStreaming="Netflix"
-                                    duree={1.30} />
+                                <Image src="images/image3.jpeg" />
                             </Article>
                             <Article
                                 src="images/article1.jpeg"
@@ -112,38 +108,62 @@ export default function VousRestezALaMaison() {
                                 <Bouton
                                     nombreDarticleRestant={30}
                                     typeDeContenu="Films"
-                                    titre="Voir tout le catalogue" />
+                                    titre="Voir tout le catalogue" >
+                                    Voir tout le catalogue
+                                    </Bouton>
                             </Article>
-                            <Bouton titre="S'abonner" />
-                            <Titre />
+                            <Titre graisse="bold" color="black">
+                                Aboonez-vous à Télérama et profitez gratuitement d'une sélection de films
+                            </Titre>
+                            <Bouton titre="S'abonner" backgroundColor="black" color="yellow" >
+                                S'abonner
+                            </Bouton>
                         </div>
                     </div>
 
                     <div className="colonne-droite">
                         <div className="nos-recommandations">
+                            <Titre graisse="bold" color="black">
+                                Nos recommandations
+                            </Titre>
                             <Bouton
-                                plateformeStreaming="Netflix" />
+                                plateformeStreaming="Netflix" >
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="Canal +" />
+                                plateformeStreaming="Canal +" >
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="Prime video" />
+                                plateformeStreaming="Prime video">
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="OCS" />
+                                plateformeStreaming="OCS" >
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="Apple TV +" />
+                                plateformeStreaming="Apple TV +" >
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="Disney +" />
+                                plateformeStreaming="Disney +" >
+                                Sur
+                            </Bouton>
                             <Bouton
-                                plateformeStreaming="Youtube" />
+                                plateformeStreaming="Youtube" >
+                                Sur
+                            </Bouton>
                             <Texte />
-                            <Bouton titre="Voir le programme TV" />
+                            <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
+                                Voir le programme TV
+                            </Bouton>
                             <Pub src="images/pub1.jpeg" />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="contenus-sponsorises">
-                <Titre />
                 <ContenusSponsorises />
             </div>
         </div>

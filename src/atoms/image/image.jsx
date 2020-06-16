@@ -1,9 +1,7 @@
 import React from 'react'
 
-export default function Image({ src, plateformeStreaming, duree }) {
+export default function Image({ src }) {
     return (
-        <div>
-            <p> Je suis une image !</p>
-        </div>
+        <img className="image" />
     )
 }

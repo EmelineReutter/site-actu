@@ -71,7 +71,9 @@ export default function ArticlesALaUne() {
                         titre="Nos newsletters"
                         texteExplicatif="Retrouvez le meilleur de telerama (...)"
                     >
-                        <Bouton />
+                        <Bouton backgroundColor="red" color="white">
+                            M'inscrire
+                        </Bouton>
                     </Newsletter>
 
                 </div>

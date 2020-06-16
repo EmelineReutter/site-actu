@@ -13,12 +13,10 @@ export default function Header() {
         <div className="header">
             <MenuHamburger />
             <TitreSite />
-            <Bouton titre="login" />
-            <Bouton titre="abonnement" />
-            <Bouton iconeDeGauche={<PoweroffOutlined />}>
+            <Bouton titre="login" iconeDeGauche={<PoweroffOutlined />}>
                 Se connecter
             </Bouton>
-            <Bouton graisse="bold" backgroundColor="yellow">
+            <Bouton titre="abonnement" graisse="bold" backgroundColor="yellow">
                 Je m'abonne
             </Bouton>
         </div>

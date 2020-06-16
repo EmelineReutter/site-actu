@@ -17,9 +17,13 @@ export default function VousSortez() {
     return (
         <div className="vous-sortez">
             <div className="titre-vous-sortez">
-                <Titre />
+                <Titre graisse="bold" color="black">
+                    Vous sortez ?
+                </Titre>
                 <Ligne />
-                <Titre />
+                <Titre graisse="bol" color="black">
+                    Les sorties cinémas de la semaine
+                </Titre>
                 <div className="les-sorties-cinema-de-la-semaine">
 
                     <Article
@@ -45,7 +49,9 @@ export default function VousSortez() {
                         <Bouton
                             nombreDarticleRestant={7}
                             typeDeContenu="films"
-                            titre="Voir tous les films" />
+                            titre="Voir tous les films" >
+                            Voir tous les films
+                        </Bouton>
                     </Article>
 
                 </div>
@@ -73,6 +79,9 @@ export default function VousSortez() {
                         <Pub src="images/pub1.jpeg" />
                     </div>
                     <div className="les-selections-enfants-de-la-redaction">
+                        <Titre color="black" graisse="bold">
+                            Les séléctions enfants de la rédaction
+                        </Titre>
                         <Article
                             src="images/article1.jpeg"
                             categorie="Sortir - Expo"
@@ -84,7 +93,10 @@ export default function VousSortez() {
                             titreArticle="Le studio Harry Potter (...)"
                             tempsDeLecture={6} />
                     </div>
-                    <div className="les-evenemnts-telerama-du-moment">
+                    <div className="les-evenements-telerama-du-moment">
+                        <Titre color="black" graisse="bold">
+                            Les événements Télérama du moment
+                        </Titre>
                         <Article
                             categorie=" Sortir - Expo"
                             titreArticle="Pass Art Contemporain Télérama"
@@ -95,20 +107,20 @@ export default function VousSortez() {
                             dateEvenement="Dès le 16 octobre, Dans + de 50 musées en France" />
                     </div>
                     <div className="abonnement-telerama">
-                        <Titre />
+                        <Titre graisse="bold" color="black">
+                            Abonnez-vous à Télérama et bénéficiez de tarifs réduits sur une sélection de sorties.
+                        </Titre>
                         <Article
                             titreArticle="Samedi Séries: -25%"
                             PhraseDaccroche="Débats,rencontres, masterlasses!">
                             <Image
-                                src="images/article1.jpeg"
-                                duree={1.30} />
+                                src="images/article1.jpeg" />
                         </Article>
                         <Article
                             titreArticle="La Nuit du Cirque: -30%"
                             PhraseDaccroche="Le cirque de création (...)">
                             <Image
-                                src="images/article2.jpeg"
-                                duree={1.30} />
+                                src="images/article2.jpeg" />
                         </Article>
                         <Article
                             src="images/article3.jpeg"
@@ -119,45 +131,63 @@ export default function VousSortez() {
                                 titre="Voir toutes les sorties"
                                 typeDeContenu="réductions" />
                         </Article>
-                        <Titre />
-                        <Bouton titre="Je m'abonne" />
-                        <Titre />
+                        <Bouton titre="Je m'abonne" backgroundColor="black" color="yellow" >
+                            Je m'abonne
+                        </Bouton>
                     </div>
                 </div>
                 <div className="colonne-droite-boutons-recommandations">
                     <div className="boutons-recommandations">
+                        <Titre graisse="bold" color="black"> Nos recommandations </Titre>
                         <Bouton
                             iconeDeGauche={<StarOutlined />}
-                            titre="Spectacles" />
+                            titre="Spectacles" >
+                            Spectacles
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<TagsOutlined />}
-                            titre="Expositions" />
+                            titre="Expositions" >
+                            Expositions
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<SoundOutlined />}
-                            titre="Concerts" />
+                            titre="Concerts" >
+                            Concerts
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<TeamOutlined />}
-                            titre="Enfants" />
+                            titre="Enfants" >
+                            Enfants
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<FilterOutlined />}
-                            titre="Clubbing" />
+                            titre="Clubbing" >
+                            Clubbing
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<ShopOutlined />}
-                            titre="Restaurants" />
+                            titre="Restaurants" >
+                            Restaurants
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<CoffeeOutlined />}
-                            titre="Bars" />
+                            titre="Bars" >
+                            Bars
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<ShoppingCartOutlined />}
-                            titre="Boutiques" />
+                            titre="Boutiques" >
+                            Boutiques
+                        </Bouton>
                         <Bouton
                             iconeDeGauche={<ShoppingOutlined />}
-                            titre="Voyages" />
+                            titre="Voyages" >
+                            Voyages
+                        </Bouton>
                     </div>
                 </div>
             </div>
             <div className="contenus-sponsorises">
-                <Titre />
                 <ContenusSponsorises />
             </div>
         </div>

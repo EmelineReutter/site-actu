@@ -8,20 +8,22 @@ import Texte from '../../atoms/texte/texte'
 import Categorie from '../categorie/categorie'
 import SousCategorie from '../sous-categorie/sousCategorie'
 
-import Site from '../site/site'
+import DepartementBloc from '../departement-bloc/departementBloc'
 import MentionsLegales from '../mentions-legales/mentionsLegales'
+import { FacebookOutlined, TwitterOutlined, InstagramOutlined, YoutubeOutlined, WifiOutlined } from '@ant-design/icons';
+import TitreSite from '../titre-site/titreSite'
 
 export default function Footer() {
     return (
         <div className="footer">
             <div className="titre-footer">
-                <Titre />
+                <TitreSite> Télérama</TitreSite>
                 <div className="navbar-reseaux-sociaux">
-                    <Bouton titre="Facebook" />
-                    <Bouton titre="Twitter" />
-                    <Bouton titre="Instagram" />
-                    <Bouton titre="Youtube" />
-                    <Bouton titre="RSS" />
+                    <Bouton titre="Facebook" iconeDeGauche={<FacebookOutlined />} />
+                    <Bouton titre="Twitter" iconeDeGauche={<TwitterOutlined />} />
+                    <Bouton titre="Instagram" iconeDeGauche={<InstagramOutlined />} />
+                    <Bouton titre="Youtube" iconeDeGauche={<YoutubeOutlined />} />
+                    <Bouton titre="RSS" iconeDeGauche={<WifiOutlined />} />
                 </div>
             </div>
             <div className="colonne-gauche">
@@ -44,9 +46,13 @@ export default function Footer() {
                     </Categorie>
                 </div>
                 <div className='nos-newsletters'>
-                    <Titre />
-                    <Texte />
-                    <Bouton titre="M'inscrire" />
+                    <Titre color="black" graisse="bold"> Nos newsletters</Titre>
+                    <Texte color="black" graisse="bold">
+                        Retrouvez le meilleur de Télérama (...)
+                    </Texte>
+                    <Bouton titre="M'inscrire" backgroundColor="red" color="white" >
+                        M'inscrire
+                    </Bouton>
                 </div>
             </div>
             <div className="colonne-droite">
@@ -69,47 +75,49 @@ export default function Footer() {
 
                 </div>
                 <div className="nos-applis-mobiles">
-                    <Titre />
+                    <Titre graisse="bold" color="black"> Nos applis mobiles </Titre>
                     <SousCategorie
                         titre="Appli TV" />
                     <SousCategorie
                         titre="Télécharger sur google play"
-                        text_decoration="solid"
-                        text_decoration_color="black" />
+                        textDecoration="solid"
+                        textDecorationColor="black" />
                     <SousCategorie
                         titre="Télécharger sur l'App Store"
-                        text_decoration="solid"
-                        text_decoration_color="black" />
+                        textDecoration="solid"
+                        textDecorationColor="black" />
                     <SousCategorie
                         titre="Appli liseuse" />
                     <SousCategorie
                         titre="Télécharger sur google play"
-                        text_decoration="solid"
-                        text_decoration_color="black" />
+                        textDecoration="solid"
+                        textDecorationColor="black" />
                     <SousCategorie
                         titre="Télécharger sur l'App Store"
-                        text_decoration="solid"
-                        text_decoration_color="black" />
+                        textDecoration="solid"
+                        textDecorationColor="black" />
                 </div>
             </div>
             <div className="sites-du-groupe">
-                <Titre />
-                <Site
+                <Titre color="noir" graisse="bold"  >
+                    Sites du groupe
+                </Titre>
+                <DepartementBloc
                     titre="Le monde"
                     src="icones/icone1.jpeg" />
-                <Site
+                <DepartementBloc
                     titre="Courrier internationale"
                     src="icones/icone2.jpeg" />
-                <Site
+                <DepartementBloc
                     titre="Télérama"
                     src="icones/icone3.jpeg" />
-                <Site
+                <DepartementBloc
                     titre="Le huffington Post"
                     src="icones/icone4.jpeg" />
-                <Site
+                <DepartementBloc
                     titre="Le monde diplomatique"
                     src="icones/icone5.jpeg" />
-                <Site
+                <DepartementBloc
                     titre="La vie"
                     src="icones/icone6.jpeg" />
             </div>

@@ -1,11 +1,9 @@
 import React from 'react'
 
-export default function Titre() {
+export default function Titre({ children, color, graisse }) {
     return (
-        <div className="titre">
-            <p>
-                Titre
-            </p>
-        </div>
+        <h2 className="titre">
+            {children}
+        </h2>
     )
 }

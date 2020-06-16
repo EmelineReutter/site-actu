@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Section() {
+export default function Section({ titre, children }) {
     return (
         <div className="section">
             <p>
-                Section
+                {children} Section
             </p>
         </div>
     )

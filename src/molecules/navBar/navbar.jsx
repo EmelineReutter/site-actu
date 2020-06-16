@@ -4,13 +4,15 @@ import './navbar.css'
 
 import Bouton from '../bouton/bouton'
 import Section from '../../atoms/section/section'
+import { SearchOutlined } from '@ant-design/icons';
 
 export default function NavBar() {
     return (
         <div className="navbar">
-            <Bouton titre="recherche" />
-            <Section
-                titre='Programme TV' />
+            <Bouton titre="recherche" iconeDeGauche={<SearchOutlined />} >
+                Recherche
+            </Bouton>
+            <Section titre='Programme TV' />
             <Section
                 titre='Cannes 2019' />
             <Section

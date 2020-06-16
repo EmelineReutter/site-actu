@@ -1,11 +1,9 @@
-import React from ''
-
-import Pub from './pub.css'
+import React from 'react'
 
 export default function Pub() {
     return (
         <div className="pub">
-            <p> Pub </p>
+            <img />
         </div>
     )
 }
