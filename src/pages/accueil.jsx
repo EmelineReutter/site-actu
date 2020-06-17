@@ -1,53 +1,42 @@
 import React from 'react'
 
-import Grille from '../molecules/grille/grille'
-import Bouton from '../molecules/bouton/bouton'
-import Texte from '../atoms/texte/texte'
-
-import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined, ShopOutlined, CoffeeOutlined, ShoppingCartOutlined, ShoppingOutlined } from '@ant-design/icons';
-
+import Header from '../molecules/header/header'
+import Navbar from '../molecules/navBar/navbar'
+import Pub from '../molecules/pub/pub'
+import GrosTitres from '../molecules/gros-titres/gros-titres'
+import ArticlesALaUne from '../molecules/articles-a-la-une/articles-a-la-une'
+import ContenusSponsorises from '../molecules/contenus-sponsorises/contenus-sponsorises'
+import VousRestezALaMaison from '../molecules/vous-restez-a-la-maison/vous-restez-a-la-maison'
+import VousSortez from '../molecules/vous-sortez/vous-sortez'
+import Footer from '../molecules/footer/footer'
+import FicheResumeFilm from '../molecules/fiche-resume-film/fiche-resume-film'
 
 function Accueil() {
-  return (<section>
-    <h1>Acceuil</h1>
-    <p>Emeline, c'est ici que tu dois tester les composants que tu créé.</p>
-    <a href="/ant-design">Aller à la page ant design</a>
-    <div id="emeline-work">
-      Remplace ce contenu par tes composants
-      <div className='col-4'>
-        <Bouton iconeDeGauche={<StarOutlined />}>
-          Spectacles
-      </Bouton>
-        <Bouton iconeDeGauche={<TagsOutlined />}>
-          Expositions
-      </Bouton>
-        <Bouton iconeDeGauche={<SoundOutlined />}>
-          Concerts
-      </Bouton>
-        <Bouton iconeDeGauche={<TeamOutlined />}>
-          Enfants
-      </Bouton>
-        <Bouton iconeDeGauche={<FilterOutlined />}>
-          Clubbing
-      </Bouton>
-        <Bouton iconeDeGauche={<ShopOutlined />}>
-          Restaurants
-      </Bouton>
-        <Bouton iconeDeGauche={<CoffeeOutlined />}>
-          Bars
-      </Bouton>
-        <Bouton iconeDeGauche={<ShoppingCartOutlined />}>
-          Boutiques
-      </Bouton>
-        <Bouton iconeDeGauche={<ShoppingOutlined />}>
-          Voyages
-      </Bouton>
+  return (
+    <section>
+
+      <h1>Accueil</h1>
+      <p>Emeline, c'est ici que tu dois tester les composants que tu créé.</p>
+      <a href="/ant-design">Aller à la page ant design</a>
+
+      <div id="emeline-work">
+        <Header />
+        <Navbar />
+        <Pub nombre={1} />
+        <GrosTitres />
+        <ArticlesALaUne />
+        <ContenusSponsorises />
+        <VousRestezALaMaison />
+        <VousSortez />
+        <ContenusSponsorises />
+        <Pub nombre={1} />
+        <Pub nombre={3} />
+        <Footer />
+        <FicheResumeFilm type="Horreur" auteur="Me">
+          Hollywood style
+        </FicheResumeFilm>
       </div>
-      <Grille />
-      <Texte>
-        Coucou je suis un paragraphe !
-      </Texte>
-    </div>
-  </section>)
+
+    </section>)
 }
 export default Accueil

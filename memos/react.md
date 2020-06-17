@@ -62,7 +62,7 @@ export default Texte
 Étapes pour le faire :
 
 1. Toujours importer react.
-2. Importer son fichier CSS si il existe (exemple si j'avais un fichier CSS pour texte j'aurais dû noter au début :  import './text.css').
+2. Importer son fichier CSS si il existe (exemple si j'avais un fichier CSS pour texte j'aurais dû noter au début : import './text.css').
 3. Déclarer sa fonction (avec un nom en cohérence avec ce qu'elle fait ou ce qu'elle représente).
 4. Ne pas mettre de paramètres entre les parenthèses.
 
@@ -112,4 +112,3 @@ export default Bouton
 5. Je "return" ce que ma fonction doit retourner (ici il s'agit de plusieurs <div>).
 6. Dans ma fonction j'écris mes éléments HTML (<button>, <div> ...)
 7. J'exporte ma fonction par défaut. ("export default NomdeLaFonction").
-  

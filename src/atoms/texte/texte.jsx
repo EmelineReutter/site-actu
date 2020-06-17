@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function Texte({ couleur, graisse, children }) {
+export default function Texte({ children, color, graisse }) {
     return (
-        <span>Je suis un texte, je devrais m'afficher en {couleur}, mais flemme d'écrire le css, et je devrais avoir comme graisse {graisse}. Et je dois afficher le texte : {children}</span>
+        <div className="texte">
+            {children}
+            <p>
+                Je suis un texte.
+            </p>
+        </div>
     )
 }
