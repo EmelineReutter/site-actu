@@ -3,8 +3,8 @@ import React from 'react'
 import './articles-a-la-une.css'
 
 import Article from '../article/article'
-import Pub from '../../atoms/pub/pub'
-import Newsletter from '../../atoms/newsletter/newsletter'
+import Pub from '../pub/pub'
+import Newsletter from '../newsletter/newsletter'
 import TopCategoriesLesPlusLus from '../categories-les-plus-lus/categories-les-plus-lus'
 import Bouton from '../bouton/bouton'
 

@@ -3,7 +3,7 @@ import React from 'react'
 import './navbar.css'
 
 import Bouton from '../bouton/bouton'
-import Section from '../../atoms/section/section'
+import Section from '../section/section'
 import { SearchOutlined } from '@ant-design/icons';
 
 export default function NavBar() {

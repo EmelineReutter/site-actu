@@ -8,7 +8,7 @@ import Article from '../article/article'
 
 import Image from '../../atoms/image/image'
 import Bouton from '../bouton/bouton'
-import Pub from '../../atoms/pub/pub'
+import Pub from '../pub/pub'
 import Texte from '../../atoms/texte/texte'
 import ContenusSponsorises from '../contenus-sponsorises/contenus-sponsorises'
 
@@ -17,7 +17,7 @@ export default function VousRestezALaMaison() {
         <div className="vous-restez-a-la-maison">
             <div className="titre-vous-restez-a-la-maison">
 
-                <div className="a-regarder-ce-soir">
+                <div id="a-regarder-ce-soir">
                     <Titre graisse="bold" color="black">
                         Vous restez à la maison ?
                     </Titre>
@@ -53,7 +53,9 @@ export default function VousRestezALaMaison() {
                         titreContenu="France-Modalvie"
                         typeDeContenu="Foot"
                         phraseDaccroche="Sur la route de l'Euro (...)" >
-                        <Bouton titre="Voir toute la sélection" />
+                        <Bouton titre="Voir toute la sélection" backgroundColor="red" color="white" >
+                            Voir toute la sélection
+                        </Bouton>
                     </Article>
                 </div>
 
@@ -88,9 +90,6 @@ export default function VousRestezALaMaison() {
                                 tempsDeLecture={6} />
                         </div>
                         <div className="abonnement-telerama">
-                            <Titre graisse="bold" color="black">
-                                Abonnez vous à Télérama et profitez gratuitement d'une sélection de films.
-                            </Titre>
                             <Article
                                 titreArticle="Douleur et gloire"
                                 phraseDaccroche="L'Espagnol (...)">
@@ -113,7 +112,7 @@ export default function VousRestezALaMaison() {
                                     </Bouton>
                             </Article>
                             <Titre graisse="bold" color="black">
-                                Aboonez-vous à Télérama et profitez gratuitement d'une sélection de films
+                                Abonnez-vous à Télérama et profitez gratuitement d'une sélection de films
                             </Titre>
                             <Bouton titre="S'abonner" backgroundColor="black" color="yellow" >
                                 S'abonner

@@ -5,7 +5,7 @@ import "./vous-sortez.css"
 import Titre from '../../atoms/titre/titre'
 import Ligne from '../../atoms/ligne/ligne'
 import Article from '../article/article'
-import Pub from '../../atoms/pub/pub'
+import Pub from '../pub/pub'
 import Image from '../../atoms/image/image'
 
 import Bouton from '../bouton/bouton'
@@ -21,7 +21,7 @@ export default function VousSortez() {
                     Vous sortez ?
                 </Titre>
                 <Ligne />
-                <Titre graisse="bol" color="black">
+                <Titre graisse="bold" color="black">
                     Les sorties cinémas de la semaine
                 </Titre>
                 <div className="les-sorties-cinema-de-la-semaine">
@@ -80,7 +80,7 @@ export default function VousSortez() {
                     </div>
                     <div className="les-selections-enfants-de-la-redaction">
                         <Titre color="black" graisse="bold">
-                            Les séléctions enfants de la rédaction
+                            Les sélections enfants de la rédaction
                         </Titre>
                         <Article
                             src="images/article1.jpeg"

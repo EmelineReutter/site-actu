@@ -1,12 +1,11 @@
 import React from 'react'
 
-export default function FicheResumeFilm({ children, type, titre, auteur }) {
+export default function FicheResumeFilm({ type, titre, auteur }) {
     return (
         <div>
-            {children}
-            <span className='type_film'></span>
-            <span className='titre_film'></span>
-            <span className='auteur_film'></span>
+            <span className='type_film'>{type}</span>
+            <span className='titre_film'>{titre}</span>
+            <span className='auteur_film'>{auteur}</span>
         </div>
     )
 }
