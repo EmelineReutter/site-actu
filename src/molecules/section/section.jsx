@@ -4,7 +4,7 @@ export default function Section({ titre, children }) {
     return (
         <div className="section">
             <p>
-                {children} Section
+                {children}
             </p>
         </div>
     )

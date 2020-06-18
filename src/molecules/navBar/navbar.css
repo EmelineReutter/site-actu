@@ -1,0 +1,9 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    border-top-width: medium;
+    border-top: outset;
+    color: black;
+    
+}

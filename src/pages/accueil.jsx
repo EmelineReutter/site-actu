@@ -32,8 +32,7 @@ function Accueil() {
         <Pub nombre={1} />
         <Pub nombre={3} />
         <Footer />
-        <FicheResumeFilm type="Horreur" auteur="Me">
-          Hollywood style
+        <FicheResumeFilm type="Horreur" auteur="Me" titre="Hollywood style">
         </FicheResumeFilm>
       </div>
 
