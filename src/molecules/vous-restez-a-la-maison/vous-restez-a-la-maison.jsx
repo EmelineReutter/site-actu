@@ -16,7 +16,6 @@ export default function VousRestezALaMaison() {
     return (
         <div className="vous-restez-a-la-maison">
             <div className="titre-vous-restez-a-la-maison">
-
                 <div id="a-regarder-ce-soir">
                     <Titre graisse="bold" color="black">
                         Vous restez à la maison ?
@@ -60,11 +59,14 @@ export default function VousRestezALaMaison() {
                 </div>
 
             </div>
-            <div className="container-selections-recommandations">
+            <div className="container-selections-recommandations-vous-restez">
                 <div className="colonne-gauche">
 
                     <div className="les-selections-telerama">
                         <div className="les-selections-de-la-redaction">
+                            <Titre >
+                                Les sélections de la rédaction
+                            </Titre>
                             <Article
                                 typeDeContenu="Écrans & TV .Séries"
                                 titreContenu="Notre top 50 (...)"
@@ -119,46 +121,46 @@ export default function VousRestezALaMaison() {
                             </Bouton>
                         </div>
                     </div>
+                </div>
 
-                    <div className="colonne-droite">
-                        <div className="nos-recommandations">
-                            <Titre graisse="bold" color="black">
-                                Nos recommandations
+                <div className="colonne-droite">
+                    <div className="nos-recommandations">
+                        <Titre graisse="bold" color="black">
+                            Nos recommandations
                             </Titre>
-                            <Bouton
-                                plateformeStreaming="Netflix" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Netflix" >
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Canal +" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Canal +" >
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Prime video">
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Prime video">
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="OCS" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="OCS" >
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Apple TV +" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Apple TV +" >
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Disney +" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Disney +" >
+                            Sur
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Youtube" >
-                                Sur
+                        <Bouton
+                            plateformeStreaming="Youtube" >
+                            Sur
                             </Bouton>
-                            <Texte />
-                            <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
-                                Voir le programme TV
+                        <Texte />
+                        <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
+                            Voir le programme TV
                             </Bouton>
-                            <Pub src="images/pub1.jpeg" />
-                        </div>
+                        <Pub src="images/pub1.jpeg" />
                     </div>
                 </div>
             </div>

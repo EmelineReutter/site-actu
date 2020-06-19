@@ -1,0 +1,10 @@
+.ligne {
+    background-color: black;
+    height: 3px;
+    width: 1016px;
+}
+
+.container-ligne {
+    display: flex;
+    justify-content: center;
+}
