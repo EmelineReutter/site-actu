@@ -7,10 +7,11 @@ import Ligne from '../../atoms/ligne/ligne'
 import Article from '../article/article'
 
 import Image from '../../atoms/image/image'
-import Bouton from '../bouton/bouton'
+import BoutonRecommandation from '../bouton-recommandation/boutonRecommandation'
 import Pub from '../pub/pub'
 import Texte from '../../atoms/texte/texte'
 import ContenusSponsorises from '../contenus-sponsorises/contenus-sponsorises'
+import Bouton from '../bouton/bouton'
 
 export default function VousRestezALaMaison() {
     return (
@@ -128,34 +129,34 @@ export default function VousRestezALaMaison() {
                         <Titre graisse="bold" color="black">
                             Nos recommandations
                             </Titre>
-                        <Bouton
+                        <BoutonRecommandation
                             plateformeStreaming="Netflix" >
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="Canal +" >
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="Prime video">
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="OCS" >
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="Apple TV +" >
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="Disney +" >
                             Sur
-                            </Bouton>
-                        <Bouton
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
                             plateformeStreaming="Youtube" >
                             Sur
-                            </Bouton>
+                            </BoutonRecommandation>
                         <Texte />
                         <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
                             Voir le programme TV

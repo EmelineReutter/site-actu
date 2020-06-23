@@ -1,25 +1,23 @@
 import React from 'react'
-import { LoginOutlined } from '@ant-design/icons';
 
 import "./header.css"
 
 import MenuHamburger from '../menu-hamburger/menuHamburger'
-import TitreSite from '../titre-site/titreSite'
+import Bouton from '../bouton/bouton'
 import BoutonLogin from '../bouton-login/boutonLogin'
-
 
 export default function Header() {
     return (
         <div className="header">
             <MenuHamburger />
-            <TitreSite> Télérama </TitreSite>
+            <div src="public/images/logoSite.png" className="logo-site"></div>
             <div className="boutons-header">
-                <BoutonLogin iconeDeGauche={<LoginOutlined />} border="none">
-                    Se connecter
-                </BoutonLogin>
-                <BoutonLogin graisse="bold" backgroundColor="yellow">
+
+                <BoutonLogin />
+
+                <Bouton className="bouton-jaune">
                     Je m'abonne
-                </BoutonLogin>
+                </Bouton>
             </div>
         </div>
     )

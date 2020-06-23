@@ -12,35 +12,35 @@ export default function NavBar() {
             <Bouton titre="recherche" iconeDeGauche={<SearchOutlined />} >
             </Bouton>
             <Section titre='Programme TV'>
-                Programme TV
+                PROGRAMME TV
             </Section>
             <Section
                 titre='Cannes 2019' >
-                Cannes 2019
+                CANNES 2019
                 </Section>
             <Section
                 titre='Cinémas' >
-                Cinémas
+                CINÉMAS
                 </Section>
             <Section
                 titre='Écrans & TV' >
-                Écrans et TV
+                ÉCRANS & TV
                 </Section>
             <Section
                 titre='Sortir' >
-                Sortir
+                SORTIR
                 </Section>
             <Section
                 titre='Musiques' >
-                Musiques
+                MUSIQUES
                 </Section>
             <Section
                 titre='Radio & podcasts' >
-                Radio & podcasts
+                RADIO & PODCASTS
                 </Section>
             <Section
                 titre='livres' >
-                Livres
+                LIVRES
                 </Section>
         </div>
     )

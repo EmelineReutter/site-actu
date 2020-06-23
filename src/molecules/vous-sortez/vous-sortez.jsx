@@ -8,8 +8,9 @@ import Article from '../article/article'
 import Pub from '../pub/pub'
 import Image from '../../atoms/image/image'
 
-import Bouton from '../bouton/bouton'
+import BoutonRecommandation from '../bouton-recommandation/boutonRecommandation'
 import ContenusSponsorises from '../contenus-sponsorises/contenus-sponsorises'
+import Bouton from '../bouton/bouton'
 
 import { StarOutlined, TagsOutlined, SoundOutlined, TeamOutlined, FilterOutlined, ShopOutlined, ShoppingCartOutlined, CoffeeOutlined, ShoppingOutlined } from '@ant-design/icons';
 
@@ -139,51 +140,53 @@ export default function VousSortez() {
                 <div className="colonne-droite-boutons-recommandations">
                     <div className="boutons-recommandations">
                         <Titre graisse="bold" color="black"> Nos recommandations </Titre>
-                        <Bouton
-                            iconeDeGauche={<StarOutlined />}
-                            titre="Spectacles" >
-                            Spectacles
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<TagsOutlined />}
-                            titre="Expositions" >
-                            Expositions
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<SoundOutlined />}
-                            titre="Concerts" >
-                            Concerts
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<TeamOutlined />}
-                            titre="Enfants" >
-                            Enfants
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<FilterOutlined />}
-                            titre="Clubbing" >
-                            Clubbing
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<ShopOutlined />}
-                            titre="Restaurants" >
-                            Restaurants
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<CoffeeOutlined />}
-                            titre="Bars" >
-                            Bars
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<ShoppingCartOutlined />}
-                            titre="Boutiques" >
-                            Boutiques
-                        </Bouton>
-                        <Bouton
-                            iconeDeGauche={<ShoppingOutlined />}
-                            titre="Voyages" >
-                            Voyages
-                        </Bouton>
+                        <div className="col-4">
+                            <BoutonRecommandation
+                                iconeDeGauche={<StarOutlined />}
+                                titre="Spectacles" >
+                                Spectacles
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<TagsOutlined />}
+                                titre="Expositions" >
+                                Expositions
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<SoundOutlined />}
+                                titre="Concerts" >
+                                Concerts
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<TeamOutlined />}
+                                titre="Enfants" >
+                                Enfants
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<FilterOutlined />}
+                                titre="Clubbing" >
+                                Clubbing
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<ShopOutlined />}
+                                titre="Restaurants" >
+                                Restaurants
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<CoffeeOutlined />}
+                                titre="Bars" >
+                                Bars
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<ShoppingCartOutlined />}
+                                titre="Boutiques" >
+                                Boutiques
+                            </BoutonRecommandation>
+                            <BoutonRecommandation
+                                iconeDeGauche={<ShoppingOutlined />}
+                                titre="Voyages" >
+                                Voyages
+                            </BoutonRecommandation>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -7,3 +7,14 @@
 .App-link {
   color: #61dafb;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-medium .anticon svg {
+  width: 30px;
+  height: 30px;
+  color: red;
+}

@@ -1,10 +1,12 @@
 import React from 'react'
-import { Button } from 'antd';
-
 import './boutonLogin.css'
 
-export default function BoutonLogin({ iconeDeGauche, children, graisse, backgroundColor, border }) {
+import { LoginOutlined } from '@ant-design/icons'
+
+export default function boutonLogin({ iconeDeGauche }) {
     return (
-        <Button>{iconeDeGauche}{children} </Button>
+        <button id="bouton-login">
+            {iconeDeGauche = <LoginOutlined />} <span id="texte-bouton-login"> Se connecter </span>
+        </button>
     )
 }

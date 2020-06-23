@@ -17,9 +17,6 @@ export default function ArticlesALaUne() {
             <div className="titre-section">
                 <Titre> À la une </Titre>
                 <Ligne />
-                <div className="divider">
-
-                </div>
             </div>
 
             <div className="contenu-section">

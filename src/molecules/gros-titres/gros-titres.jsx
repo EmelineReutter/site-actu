@@ -6,10 +6,10 @@ import Article from '../article/article'
 
 export default function GrosTitres() {
     return (
-        <div className="gros-titres">
+        <div className="gros-titres flex-center">
             <div className="container-gros-titres">
                 <div className="container-article-principal">
-                    <Article>
+                    <Article src='/images/affiche5.jpg'>
                         Je suis l'article principal
                     </Article>
                 </div>

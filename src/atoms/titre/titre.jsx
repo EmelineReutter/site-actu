@@ -1,12 +1,10 @@
 import React from 'react'
 import './titre.css'
 
-export default function Titre({ children, color, graisse }) {
+export default function Titre({ children }) {
     return (
-        <div className="container-titre">
-            <h2 className="titre">
-                {children}
-            </h2>
-        </div>
+        <h2 className="titre">
+            {children}
+        </h2>
     )
 }

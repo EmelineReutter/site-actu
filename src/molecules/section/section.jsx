@@ -1,11 +1,11 @@
 import React from 'react'
 
+import './section.css'
+
 export default function Section({ titre, children }) {
     return (
         <div className="section">
-            <p>
-                {children}
-            </p>
+            <span className="titre-section">{children}</span>
         </div>
     )
 }

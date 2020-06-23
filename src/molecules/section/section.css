@@ -1,0 +1,4 @@
+.titre-section:hover {
+    color: red;
+    cursor: pointer;
+}
