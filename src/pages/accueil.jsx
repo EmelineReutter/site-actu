@@ -23,7 +23,7 @@ function Accueil() {
         <div id="container-site">
           <Header />
           <Navbar />
-          <Pub nombre={1} />
+          <Pub classname="pub-header" nombre={1} />
           <GrosTitres />
           <ArticlesALaUne />
           <ContenusSponsorises />

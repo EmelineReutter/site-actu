@@ -20,6 +20,12 @@
 }
 
 img {
-  width: 452px;
-  height: 489px;
+  height: 180px;
+  width: 313px;
+}
+
+.pub-header img {
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }

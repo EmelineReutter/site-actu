@@ -1,6 +1,31 @@
+.article {
+
+}
+
+.container-texte-article {
+    height: 180px;
+    width: 313px;
+}
+
+
 .logo-site {
     width: 134px;
     height: 48px;
 
     margin-bottom: 26px;
+}
+
+.text-it {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.text-small {
+    font-size: small;
+    line-height: 19px;
 }

@@ -1,14 +1,29 @@
-.article-principal img {
-    height: 489px;
-    width: 452px;
+.article {
+    padding-left: 38px;
+}
+
+.container-image-article img {
+    height: 499px;
+    width: 1016px;
+}
+
+.container-autres-articles img {
+    height: 180px;
+    width: 313px;
 }
 
 .container-autres-articles  {
     display: flex;
+    color: white;
+    justify-content: center;
 }
 
 .container-image-article {
     display: flex;
     justify-content: center;
+}
+
+.container-gros-titres {
+    background-color: black;
 }
 
