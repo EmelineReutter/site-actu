@@ -19,6 +19,6 @@
     color: black;
 }
 
-.logo-site {
-    background-image: url(/images/logoSite.png);
+.logo-site img {
+    background-color: white;
 }

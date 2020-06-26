@@ -9,25 +9,23 @@ export default function GrosTitres() {
         <div className="gros-titres flex-center">
             <div className="container-gros-titres">
                 <div className="container-article-principal">
-                    <Article src='/images/affiche5.jpg'>
-                        Je suis l'article principal
-                    </Article>
+                    <Article className="article-principal" srcImage="https://numa-bord.com/miniblog/wp-content/uploads/2017/08/tiger-2611022_1920.jpg" />
                 </div>
                 <div className="container-autres-articles">
                     <Article
-                        src="/images/affiche4.jpg"
-                        categorie='Cannes'
-                        titre='Parasite'
+                        srcImage="https://images.unsplash.com/photo-1587613864521-9ef8dfe617cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
+                        categorie="Cannes 2019"
+                        titre="Parasite c'est vraiment la Palme d'or idéale "
                         tempsDeLecture={6} />
                     <Article
-                        src="/image/affiche2.jpg"
-                        categorie='Cannes'
-                        titre='Parasite'
+                        srcImage="https://www.maxitendance.com/wp-content/uploads/2017/12/street-photographie-tokyo-japon-rk-3.jpg"
+                        categorie="Cannes 2019"
+                        titre='Mati Diop, la "nouvelle vague" de Dakar '
                         tempsDeLecture={6} />
                     <Article
-                        src="/image/affiche3.jpg"
-                        categorie='Cannes'
-                        titre='Parasite'
+                        srcImage="https://www.numero.com/sites/default/files/images/article_new/slides/genesiscmaxime_passadore_1numero-magazine-maxime-passadore-photo-art-digital-odissey-transhumanism-genesis-tokyo-japan.jpg"
+                        categorie='Cannes 2019'
+                        titre="Richard Madden, de 'Game of Thrones'à 'Rocketman' : itinéraire d'un enfant gâté"
                         tempsDeLecture={6} />
                 </div>
             </div>

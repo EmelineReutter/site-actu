@@ -1,0 +1,14 @@
+.article-principal img {
+    height: 489px;
+    width: 452px;
+}
+
+.container-autres-articles  {
+    display: flex;
+}
+
+.container-image-article {
+    display: flex;
+    justify-content: center;
+}
+

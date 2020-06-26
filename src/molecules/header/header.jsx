@@ -10,11 +10,9 @@ export default function Header() {
     return (
         <div className="header">
             <MenuHamburger />
-            <div src="public/images/logoSite.png" className="logo-site"></div>
+            <img src="images/logoSite.png" className="logo-site" />
             <div className="boutons-header">
-
                 <BoutonLogin />
-
                 <Bouton className="bouton-jaune">
                     Je m'abonne
                 </Bouton>
