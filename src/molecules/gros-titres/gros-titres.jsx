@@ -3,15 +3,16 @@ import React from 'react'
 import './gros-titres.css'
 
 import Article from '../article/article'
+import ArticlePrincipal from '../articlePrincipal/article-principal'
 
 export default function GrosTitres() {
     return (
         <div className="gros-titres">
-            <div className="container-gros-titres">
-                <div className="container-article-principal">
-                    <Article className="article-principal img" srcImage="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/05/Rocketman-Review.jpg" />
+            <div className="fond-noir">
+                <div className="container-article-principal flex-center">
+                    <ArticlePrincipal className="flex-center" srcImage="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/05/Rocketman-Review.jpg" titre="Festival" lieu="Cannes 2019" texte=" 'Rocketman', un biopic d'Elton John trop lourdaud pour prendre son envol" />
                 </div>
-                <div className="container-autres-articles">
+                <div className="container-autres-articles flex-center">
                     <Article
                         srcImage="https://images.unsplash.com/photo-1587613864521-9ef8dfe617cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80"
                         categorie="Cannes 2019"

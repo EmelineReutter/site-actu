@@ -1,0 +1,22 @@
+.titre-article-principal {
+    color: white;
+
+    position: absolute;
+    top: 10px;
+
+}
+
+.titre-article-principal h2 {
+    color: white;
+}
+
+.titre-article-principal p {
+    width: 624px;
+    font-weight: bold;
+    font-size: 30px;
+
+    text-align: justify;
+    position: relative;
+    bottom: -240px;
+    height: 132px;
+}

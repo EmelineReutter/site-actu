@@ -9,39 +9,41 @@ import { SearchOutlined } from '@ant-design/icons';
 export default function NavBar() {
     return (
         <div className="navbar">
-            <Bouton titre="recherche" iconeDeGauche={<SearchOutlined />} >
-            </Bouton>
-            <Section titre='Programme TV'>
-                PROGRAMME TV
+            <div className="container">
+                <Bouton titre="recherche" iconeDeGauche={<SearchOutlined />} >
+                </Bouton>
+                <Section titre='Programme TV'>
+                    PROGRAMME TV
             </Section>
-            <Section
-                titre='Cannes 2019' >
-                CANNES 2019
+                <Section
+                    titre='Cannes 2019' >
+                    CANNES 2019
                 </Section>
-            <Section
-                titre='Cinémas' >
-                CINÉMAS
+                <Section
+                    titre='Cinémas' >
+                    CINÉMAS
                 </Section>
-            <Section
-                titre='Écrans & TV' >
-                ÉCRANS & TV
+                <Section
+                    titre='Écrans & TV' >
+                    ÉCRANS & TV
                 </Section>
-            <Section
-                titre='Sortir' >
-                SORTIR
+                <Section
+                    titre='Sortir' >
+                    SORTIR
                 </Section>
-            <Section
-                titre='Musiques' >
-                MUSIQUES
+                <Section
+                    titre='Musiques' >
+                    MUSIQUES
                 </Section>
-            <Section
-                titre='Radio & podcasts' >
-                RADIO & PODCASTS
+                <Section
+                    titre='Radio & podcasts' >
+                    RADIO & PODCASTS
                 </Section>
-            <Section
-                titre='livres' >
-                LIVRES
+                <Section
+                    titre='livres' >
+                    LIVRES
                 </Section>
+            </div>
         </div>
     )
 }

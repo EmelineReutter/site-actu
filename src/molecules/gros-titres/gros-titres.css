@@ -2,28 +2,13 @@
     padding-left: 38px;
 }
 
-.container-image-article img {
-    height: 499px;
-    width: 1016px;
-}
-
-.container-autres-articles img {
-    height: 180px;
-    width: 313px;
-}
-
 .container-autres-articles  {
-    display: flex;
     color: white;
-    justify-content: center;
+    position: relative;
+    top: -180px;
+    left: -19px;
 }
 
-.container-image-article {
-    display: flex;
-    justify-content: center;
+.container-article-principal {
+    position: relative;
 }
-
-.container-gros-titres {
-    background-color: black;
-}
-

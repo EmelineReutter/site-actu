@@ -8,8 +8,8 @@ import Image from '../../atoms/image/image'
 export default function Article({ categorie, titre, tempsDeLecture, srcImage, iconeDeGauche }) {
     return (
         <div className="article">
-            <div className="container-image-article">
-                <Image src={srcImage} />
+            <div className="container-image-article ">
+                <Image className="img-small" src={srcImage} />
             </div>
             <div className="container-texte-article">
                 <p>

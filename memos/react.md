@@ -112,3 +112,4 @@ export default Bouton
 5. Je "return" ce que ma fonction doit retourner (ici il s'agit de plusieurs <div>).
 6. Dans ma fonction j'écris mes éléments HTML (<button>, <div> ...)
 7. J'exporte ma fonction par défaut. ("export default NomdeLaFonction").
+

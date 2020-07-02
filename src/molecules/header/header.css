@@ -6,6 +6,12 @@
     color: black;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .boutons-header {
     display: flex;
     align-items: center;

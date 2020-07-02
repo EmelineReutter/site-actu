@@ -1,11 +1,15 @@
 .App {
   width: 100vw;
   min-height: 100vh;
-  padding: 20px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.container {
+  width: 1017px;
+  min-height: 60px;
 }
 
 .flex-center {
@@ -19,13 +23,20 @@
   color: red;
 }
 
-img {
+.fond-noir {
+  background-color: black;
+}
+
+.img-small {
   height: 180px;
   width: 313px;
 }
 
-.pub-header img {
-  display: flex;
-  justify-content: center;
-  background-color: black;
+.img-large {
+  width: 1016px;
+  height: 589px;
+}
+
+.color-white {
+  color: white;
 }
