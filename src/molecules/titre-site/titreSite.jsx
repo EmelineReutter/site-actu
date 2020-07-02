@@ -1,9 +1,11 @@
 import React from 'react'
 
+import './titreSite.css'
+
 export default function TitreSite({ children }) {
     return (
-        <div className="titre-site">
-            <h1> {children} </h1>
+        <div className="container-titre-site">
+            <h2 className="titre-site"> {children} </h2>
         </div>
     )
 }

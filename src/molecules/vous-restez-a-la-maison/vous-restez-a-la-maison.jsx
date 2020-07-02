@@ -7,16 +7,16 @@ import Ligne from '../../atoms/ligne/ligne'
 import Article from '../article/article'
 
 import Image from '../../atoms/image/image'
-import Bouton from '../bouton/bouton'
+import BoutonRecommandation from '../bouton-recommandation/boutonRecommandation'
 import Pub from '../pub/pub'
 import Texte from '../../atoms/texte/texte'
 import ContenusSponsorises from '../contenus-sponsorises/contenus-sponsorises'
+import Bouton from '../bouton/bouton'
 
 export default function VousRestezALaMaison() {
     return (
         <div className="vous-restez-a-la-maison">
             <div className="titre-vous-restez-a-la-maison">
-
                 <div id="a-regarder-ce-soir">
                     <Titre graisse="bold" color="black">
                         Vous restez à la maison ?
@@ -60,11 +60,14 @@ export default function VousRestezALaMaison() {
                 </div>
 
             </div>
-            <div className="container-selections-recommandations">
+            <div className="container-selections-recommandations-vous-restez">
                 <div className="colonne-gauche">
 
                     <div className="les-selections-telerama">
                         <div className="les-selections-de-la-redaction">
+                            <Titre >
+                                Les sélections de la rédaction
+                            </Titre>
                             <Article
                                 typeDeContenu="Écrans & TV .Séries"
                                 titreContenu="Notre top 50 (...)"
@@ -119,46 +122,46 @@ export default function VousRestezALaMaison() {
                             </Bouton>
                         </div>
                     </div>
+                </div>
 
-                    <div className="colonne-droite">
-                        <div className="nos-recommandations">
-                            <Titre graisse="bold" color="black">
-                                Nos recommandations
+                <div className="colonne-droite">
+                    <div className="nos-recommandations">
+                        <Titre graisse="bold" color="black">
+                            Nos recommandations
                             </Titre>
-                            <Bouton
-                                plateformeStreaming="Netflix" >
-                                Sur
+                        <BoutonRecommandation
+                            plateformeStreaming="Netflix" >
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="Canal +" >
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="Prime video">
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="OCS" >
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="Apple TV +" >
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="Disney +" >
+                            Sur
+                            </BoutonRecommandation>
+                        <BoutonRecommandation
+                            plateformeStreaming="Youtube" >
+                            Sur
+                            </BoutonRecommandation>
+                        <Texte />
+                        <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
+                            Voir le programme TV
                             </Bouton>
-                            <Bouton
-                                plateformeStreaming="Canal +" >
-                                Sur
-                            </Bouton>
-                            <Bouton
-                                plateformeStreaming="Prime video">
-                                Sur
-                            </Bouton>
-                            <Bouton
-                                plateformeStreaming="OCS" >
-                                Sur
-                            </Bouton>
-                            <Bouton
-                                plateformeStreaming="Apple TV +" >
-                                Sur
-                            </Bouton>
-                            <Bouton
-                                plateformeStreaming="Disney +" >
-                                Sur
-                            </Bouton>
-                            <Bouton
-                                plateformeStreaming="Youtube" >
-                                Sur
-                            </Bouton>
-                            <Texte />
-                            <Bouton titre="Voir le programme TV" backgroundColor="red" color="white">
-                                Voir le programme TV
-                            </Bouton>
-                            <Pub src="images/pub1.jpeg" />
-                        </div>
+                        <Pub src="images/pub1.jpeg" />
                     </div>
                 </div>
             </div>

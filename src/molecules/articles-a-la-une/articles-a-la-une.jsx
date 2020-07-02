@@ -7,14 +7,16 @@ import Pub from '../pub/pub'
 import Newsletter from '../newsletter/newsletter'
 import TopCategoriesLesPlusLus from '../categories-les-plus-lus/categories-les-plus-lus'
 import Bouton from '../bouton/bouton'
+import Ligne from '../../atoms/ligne/ligne'
+import Titre from '../../atoms/titre/titre'
 
 export default function ArticlesALaUne() {
     return (
         <div className="articles-a-la-une">
 
             <div className="titre-section">
-                <h2>A la une</h2>
-                <div className="divider"></div>
+                <Titre> À la une </Titre>
+                <Ligne />
             </div>
 
             <div className="contenu-section">

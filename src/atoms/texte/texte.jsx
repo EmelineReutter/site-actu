@@ -1,12 +1,9 @@
 import React from 'react'
 
-export default function Texte({ children, color, graisse }) {
+export default function Texte({ categorie, titre, tempsDeLecture }) {
     return (
         <div className="texte">
-            {children}
-            <p>
-                Je suis un texte.
-            </p>
+            <p> Texte </p>
         </div>
     )
 }

@@ -10,23 +10,38 @@ export default function NavBar() {
     return (
         <div className="navbar">
             <Bouton titre="recherche" iconeDeGauche={<SearchOutlined />} >
-                Recherche
             </Bouton>
-            <Section titre='Programme TV' />
+            <Section titre='Programme TV'>
+                PROGRAMME TV
+            </Section>
             <Section
-                titre='Cannes 2019' />
+                titre='Cannes 2019' >
+                CANNES 2019
+                </Section>
             <Section
-                titre='Cinémas' />
+                titre='Cinémas' >
+                CINÉMAS
+                </Section>
             <Section
-                titre='Écrans & TV' />
+                titre='Écrans & TV' >
+                ÉCRANS & TV
+                </Section>
             <Section
-                titre='Sortir' />
+                titre='Sortir' >
+                SORTIR
+                </Section>
             <Section
-                titre='Musiques' />
+                titre='Musiques' >
+                MUSIQUES
+                </Section>
             <Section
-                titre='Radio & podcasts' />
+                titre='Radio & podcasts' >
+                RADIO & PODCASTS
+                </Section>
             <Section
-                titre='livres' />
+                titre='livres' >
+                LIVRES
+                </Section>
         </div>
     )
 }

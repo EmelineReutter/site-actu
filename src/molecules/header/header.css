@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+}
+
+.boutons-header {
+    display: flex;
+    align-items: center;
+}
+.ant-btn > .anticon + span {
+    color:black
+}
+
+.ant-btn > span {
+    display: inline-block;
+    color: black;
+}
+
+.logo-site img {
+    background-color: white;
+}

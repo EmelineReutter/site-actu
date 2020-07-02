@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-bottom: inset;
+    border-bottom-width: medium;
+    border-top-width: medium;
+    border-top: outset;
+ 
+    color: black;
+}
+
+.recherche {
+    background-color: white;
+}

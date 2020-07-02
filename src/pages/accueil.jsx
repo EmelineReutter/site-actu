@@ -20,21 +20,22 @@ function Accueil() {
       <a href="/ant-design">Aller à la page ant design</a>
 
       <div id="emeline-work">
-        <Header />
-        <Navbar />
-        <Pub nombre={1} />
-        <GrosTitres />
-        <ArticlesALaUne />
-        <ContenusSponsorises />
-        <VousRestezALaMaison />
-        <VousSortez />
-        <ContenusSponsorises />
-        <Pub nombre={1} />
-        <Pub nombre={3} />
-        <Footer />
-        <FicheResumeFilm type="Horreur" auteur="Me">
-          Hollywood style
-        </FicheResumeFilm>
+        <div id="container-site">
+          <Header />
+          <Navbar />
+          <Pub classname="pub-header" nombre={1} />
+          <GrosTitres />
+          <ArticlesALaUne />
+          <ContenusSponsorises />
+          <VousRestezALaMaison />
+          <VousSortez />
+          <ContenusSponsorises />
+          <Pub nombre={1} />
+          <Pub nombre={3} />
+          <Footer />
+          <FicheResumeFilm type="Horreur" auteur="Me" titre="Hollywood style">
+          </FicheResumeFilm>
+        </div>
       </div>
 
     </section>)
